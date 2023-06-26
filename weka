@@ -1,0 +1,99 @@
+Employee
+@relation employee
+@attribute name {x,y,z,a,b}
+@attribute id numeric
+@attribute salary {low,medium,high}
+@attribute exp numeric
+@attribute gender {male,female}
+@attribute phone numeric
+@data
+x,101,low,2,male,250311
+y,102,high,3,female,251665
+z,103,medium,1,male,240238
+a,104,low,5,female,200200
+b,105,high,2,male,240240
+weather
+@relation weather
+@attribute outlook {sunny,rainy,overcast}
+@attribute temparature numeric
+@attribute humidity numeric
+@attribute windy {true,false}
+@attribute play {yes,no}
+ @data
+sunny,85.0,85.0,false,no
+overcast,80.0,90.0,true,no
+sunny,83.0,86.0,false,yes
+rainy,70.0,86.0,false,yes
+rainy,68.0,80.0,false,yes
+rainy,65.0,70.0,true,no
+overcast,64.0,65.0,false,yes
+sunny,72.0,95.0,true,no
+sunny,69.0,70.0,false,yes
+rainy,75.0,80.0,false,yes
+buying data
+@relation buying
+@attribute age {L20,20-40,G40}
+@attribute income {high,medium,low}
+@attribute stud {yes,no}
+@attribute creditrate {fair,excellent}
+@attribute buyscomp {yes,no}
+@data
+L20,high,no,fair,yes
+20-40,low,yes,fair,yes
+G40,medium,yes,fair,yes
+L20,low,no,fair,no
+G40,high,no,excellent,yes
+L20,low,yes,fair,yes
+20-40,high,yes,excellent,no
+G40,low,no,fair,yes
+L20,high,yes,excellent,yes
+G40,high,no,fair,yes
+L20,low,yes,excellent,no
+G40,high,yes,excellent,no
+20-40,medium,yes,excellent,yes
+L20,medium,yes,fair,yes
+G40,high,yes,excellent,yes
+
+Banking data
+@relation bank
+@attribute cust {male,female}
+@attribute accno
+{0101,0102,0103,0104,0105,0106,0107,0108,0109,0110,0111,0112,0113,0114,0115}
+@attribute bankname {sbi,hdfc,sbh,ab,rbi}
+@attribute location {hyd,jmd,antp,pdtr,kdp}
+@attribute deposit {yes,no}
+@data
+male,0101,sbi,hyd,yes
+female,0102,hdfc,jmd,no
+male,0103,sbh,antp,yes
+male,0104,ab,pdtr,yes
+female,0105,sbi,jmd,no
+male,0106,ab,hyd,yes
+female,0107,rbi,jmd,yes
+female,0108,hdfc,kdp,no
+male,0109,sbh,kdp,yes
+male,0110,ab,jmd,no
+female,0111,rbi,kdp,yes
+male,0112,sbi,jmd,yes
+female,0113,rbi,antp,no
+male,0114,hdfc,pdtr,yes
+female,0115,sbh,pdtr,no
+
+customer data
+@relation customer
+@attribute name {x,y,z,u,v,l,w,q,r,n}
+@attribute age {youth,middle,senior}
+@attribute income {high,medium,low}
+@attribute class {A,B}
+@data
+x,youth,high,A
+y,youth,low,B
+z,middle,high,A
+u,middle,low,B
+v,senior,high,A
+l,senior,low,B
+w,youth,high,A
+q,youth,low,B
+r,middle,high,A
+n,senior,high,A
+
